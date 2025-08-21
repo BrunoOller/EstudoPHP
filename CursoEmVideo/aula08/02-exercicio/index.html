@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML e PHP</title>
+    <link rel="stylesheet" href="../../cssDefault/style.css">
+</head>
+<body>
+    <h1>Cálculo de Idade</h1>
+    <form action="calc.php" method="get">
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <input type="number" name="ano" placeholder="Digite seu ano de nascimento">
+        <fieldset><legend>Sexo</legend>
+            <input type="radio" value="masculino" name="sexo" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" value="feminino" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </fieldset>
+        <input type="submit" value="Calcular Idade">
+    </form>
+</body>
+</html>
